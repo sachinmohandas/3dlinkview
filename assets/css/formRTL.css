@@ -1,0 +1,47 @@
+#formio {
+    text-align: right;
+    direction: rtl;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    background-position: left calc(.375em + .1875rem) center;
+}
+
+.choices[data-type*=select-one]>.form-control.is-invalid {
+    background-position: left calc(.375em + 1.1rem) center;
+}
+
+.choices__input choices__input--cloned {
+    direction: rtl;
+}
+
+.choices[data-type*=select-one]:after {
+    left: 11.5px;
+    /*right: 0;*/
+}
+
+.choices[data-type*=select-one] .choices__input {
+    text-align: right;
+}
+
+.choices[data-type*=select-one] .choices__button {
+    left: 25px;
+    margin-right: 5px;
+}
+.formio-component .form-check-label span{
+    margin-right: 20px;
+}
+.formio-component .formio-component-phoneNumber > div[ref="element"]{
+    width: 100%;
+    clear: both;
+    height: auto;
+    border-radius: 3px;
+}
+.formio-component .formio-component-phoneNumber input {
+    direction: ltr;
+    display: inline-block;
+    float: right;
+    text-align:right;
+}
+

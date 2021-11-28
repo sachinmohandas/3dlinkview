@@ -1,0 +1,179 @@
+{
+  "components": [
+    {
+      "input": true,
+      "tableView": true,
+      "inputType": "text",
+      "inputMask": "",
+      "label": "First Name",
+      "key": "firstName",
+      "placeholder": "Enter your first name",
+      "prefix": "",
+      "suffix": "",
+      "multiple": false,
+      "defaultValue": "",
+      "protected": false,
+      "unique": false,
+      "persistent": true,
+      "validate": {
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "pattern": "",
+        "custom": "",
+        "customPrivate": false
+      },
+      "conditional": {
+        "show": false,
+        "when": null,
+        "eq": ""
+      },
+      "type": "textfield"
+    },
+    {
+      "input": true,
+      "tableView": true,
+      "inputType": "text",
+      "inputMask": "",
+      "label": "Last Name",
+      "key": "lastName",
+      "placeholder": "Enter your last name",
+      "prefix": "",
+      "suffix": "",
+      "multiple": false,
+      "defaultValue": "",
+      "protected": false,
+      "unique": false,
+      "persistent": true,
+      "validate": {
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "pattern": "",
+        "custom": "",
+        "customPrivate": false
+      },
+      "conditional": {
+        "show": false,
+        "when": null,
+        "eq": ""
+      },
+      "type": "textfield"
+    },
+    {
+      "type": "select",
+      "validate": {
+        "required": false
+      },
+      "clearOnHide": true,
+      "persistent": true,
+      "unique": false,
+      "protected": false,
+      "multiple": true,
+      "template": "<span>{{ item.label }}</span>",
+      "authenticate": false,
+      "filter": "",
+      "refreshOn": "",
+      "defaultValue": "",
+      "valueProperty": "",
+      "dataSrc": "values",
+      "data": {
+        "custom": "",
+        "resource": "",
+        "url": "",
+        "json": "",
+        "values": [
+          {
+            "label": "Angular 8",
+            "value": "Angular8"
+          },
+          {
+            "label": "Bootstrap",
+            "value": "Bootstrap"
+          },
+          {
+            "label": "Photoshop",
+            "value": "Photoshop"
+          },
+          {
+            "label": "Html,CSS,Javascript",
+            "value": "Html,CSS,Javascript"
+          },
+          []
+        ]
+      },
+      "placeholder": "Technologies",
+      "key": "Technologies",
+      "label": "Technologies",
+      "tableView": true,
+      "input": true
+    },
+    {
+      "input": true,
+      "tableView": true,
+      "label": "Comments",
+      "key": "Comments",
+      "placeholder": "What do you think?",
+      "prefix": "",
+      "suffix": "",
+      "rows": 3,
+      "multiple": false,
+      "defaultValue": "",
+      "protected": false,
+      "persistent": true,
+      "validate": {
+        "required": false,
+        "minLength": "",
+        "maxLength": "",
+        "pattern": "",
+        "custom": ""
+      },
+      "type": "textarea",
+      "conditional": {
+        "show": false,
+        "when": null,
+        "eq": ""
+      }
+    },
+    {
+      "input": true,
+      "tableView": true,
+      "label": "Signature",
+      "key": "signature",
+      "placeholder": "",
+      "footer": "Sign above",
+      "width": "100%",
+      "height": "150px",
+      "penColor": "black",
+      "backgroundColor": "rgb(245,245,235)",
+      "minWidth": "0.5",
+      "maxWidth": "2.5",
+      "protected": false,
+      "persistent": true,
+      "hidden": false,
+      "clearOnHide": true,
+      "validate": {
+        "required": false
+      },
+      "type": "signature",
+      "$$hashKey": "object:269",
+      "hideLabel": true,
+      "tags": [],
+      "conditional": {
+        "show": "",
+        "when": null,
+        "eq": ""
+      },
+      "properties": {}
+    },
+    {
+      "type": "button",
+      "label": "Submit",
+      "key": "submit",
+      "disableOnInvalid": true,
+      "input": true,
+      "tableView": false
+    }
+  ],
+  "display": "form"
+}

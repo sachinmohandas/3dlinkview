@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/formio.css" />
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker3.min.css" />
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body data-ng-app="threeDLinks">
+<div ng-controller="threeDController">
+    <div class="filter-cont" ng-if="filterCont">
+        <ul>
+            <li ng-click="selectFilter(); getDocuments()">Documents</li>
+            <li ng-click="selectFilter(); getBinders()">Binders</li>
+            <li ng-click="selectFilter(); getAlerts()">Alerts</li>
+        </ul>
+    </div>
+    <div class="td-header">
+        <div class="left td-header-filter pointer" ng-click="selectFilter()">
+            <img src="./assets/img/trianglearrow_right.png" alt="" class="left ml-3 mt-1 filter-arrow"/>
+            <p class="left text-white m-0 ml-2">Filter Connections</p>
+            <img src="./assets/img/filter.png" alt="" class="left ml-2"/>
+        </div>
+
+        <div class="left td-header-search">
+            <img src="./assets/img/search.png" alt="" class="td-search"/>
+            <input type="text" placeholder="Search" dir="rtl"/>
+        </div>
+        <div class="right td-header-menu">
+            <img src="./assets/img/menu_vertical.png" alt="" ng-click="sideMenuClick()" class="pointer"/>
+        </div>
+        <div class="td-header-multiselect right">
+            <img src="./assets/img/{{multiSelectValue}}.png" alt="" ng-click="multiSelectClick()" class="pointer mr-2"/>
+            <p class="text-white right">MultiSelect</p>
+            <div class=""></div>
+        </div>
+    </div>
+    <div class="loading-area">
+        Loading...
+    </div>
+    <div id="3d-graph"></div>
+    <div class="td-abstract">
+        <img src="./assets/img/cross.png" alt="" ng-click="abstractClose()" class="cross-btn"/>
+        <div class="abstract-cont">
+            <p class="">ABSTRACT</p>
+            <img src="./assets/img/Image.jpg" alt="" class="abstract-image"/>
+            <div class="abstract-list">
+                <ul>
+                    <li ng-repeat="abstract in abstractList">
+                        <span class="abstract-value sysId" [ngClass]="{'sysId': abstract.type = 'sysID'}">{{abstract.value}}</span>
+                        <span class="abstract-title">: {{abstract.title}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="abstract-selected-nodes">
+            <p class="">Selected Nodes</p>
+            <div class="abstract-list">
+                <ul>
+                    <li ng-repeat="node in nodeList">
+                        <span class="abstract-title">Nodes {{node}}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="td-side-menu" ng-if="viewSideMenu">
+        <ul>
+            <li ng-repeat="link in links" ng-click="nodeClick(link.value)">{{link.text}}<img src="./assets/img/{{link.icon}}.png" class="side-menu-icon" alt=""/></li>
+        </ul>
+    </div>
+    <div class="td-link-area">
+        <img src="./assets/img/cross.png" alt="" class="cross-btn" ng-click="linkClose()"/>
+        <p class="">Link Details</p>
+        <table class="table">
+            <tr>
+                <th>data</th>
+                <th>data</th>
+                <th>data</th>
+                <th>data</th>
+                <th>data</th>
+                <th>data</th>
+            </tr>
+            <tr ng-repeat="data in tableData">
+                <td>{{data.text1}}</td>
+                <td>{{data.text2}}</td>
+                <td>{{data.text3}}</td>
+                <td>{{data.text4}}</td>
+                <td>{{data.text5}}</td>
+                <td>{{data.text6}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="assets/libs/jQuery3.5.1.js"></script>
+<script src="assets/libs/angular.min.js"></script>
+<script src="assets/libs/angular-route.min.js"></script>
+<script src="assets/libs/angular-cookies.min.js"></script>
+<script src="assets/libs/angular-flash.min.js"></script>
+<script src="assets/libs/angular-idle.min.js"></script>
+
+<script src="assets/libs/bootstrap.min.js"></script>
+<script src="assets/libs/jspdf.min.js"></script>
+<script src="assets/libs/html2canvas.js"></script>
+<script src="assets/libs/dom-to-image.min.js"></script>
+<script src="//unpkg.com/three"></script>
+<script src="//unpkg.com/three-spritetext"></script>
+<script src="//unpkg.com/3d-force-graph"></script>
+<script src="//unpkg.com/3d-force-graph@1"></script>
+<script src="//unpkg.com/d3-dsv"></script>
+<script src="//unpkg.com/d3-dsv"></script>
+<script src="//unpkg.com/dat.gui"></script>
+<script src="//unpkg.com/d3-octree"></script>
+<script src="//unpkg.com/d3-force-3d"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="main.js"></script>
+<script src="routeConfig.js"></script>
+<script src="3dController.js"></script>
+</body>
+</html>

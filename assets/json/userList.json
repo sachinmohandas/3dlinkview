@@ -1,0 +1,22 @@
+[
+	{
+		"id": 100,
+		"username": "Admin",
+		"password": "admin",
+		"name": "Vikrant",
+		"role": "admin",
+		"created": "19/10/1987",
+		"lastLogin": "02/19/2019",
+		"draft": null
+	},
+	{
+		"id": 101,
+		"username": "Vikrant",
+		"password": "vikrant",
+		"name": "Vikrant",
+		"role": "users",
+		"created": "19/10/1987",
+		"lastLogin": "02/19/2019",
+		"draft": null
+	}
+]
