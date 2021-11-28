@@ -363,6 +363,7 @@ app.controller('threeDController', function ($scope) {
         $('.abstract-cont').hide();
         $('.abstract-selected-nodes').show();
         $scope.nodeList.push(id);
+        $scope.$apply();
         console.log($scope.nodeList);
     }
     $scope.sideMenuClick = function () {
@@ -389,5 +390,5 @@ app.controller('threeDController', function ($scope) {
     $scope.multiSelect = false;
     $scope.abstractCont = true;
     $scope.zoomtoFit = false;
-
+     $scope.nodeList = [];
 });
