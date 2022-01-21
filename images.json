@@ -1,177 +1,179 @@
 [
   {
-    "src": "human_aqua.png"
+    "src": "human.svg",
+    "color": "#ff0000"
   },
   {
-    "src": "human_green.png"
+    "src": "doc.svg",
+    "color": "#ff0000"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "org_aqua.png"
+    "src": "doc.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "org.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "org_aqua.png",
+    "src": "doc.svg",
     "color": "#fff"
   },
   {
-    "src": "org_aqua.png"
+    "src": "doc.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "org_aqua.png"
+    "src": "doc.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "doc_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "human_aqua.png",
+    "src": "human.svg",
     "color": "#fff"
   },
   {
-    "src": "doc_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "vechicle_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "org.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "org.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "org_aqua.png",
+    "src": "doc.svg",
     "color": "#fff"
   },
   {
-    "src": "vehicle_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "org_aqua.png"
+    "src": "doc.svg"
   },
   {
-    "src": "doc_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "org.svg"
   },
   {
-    "src": "vechicle_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "doc_aqua.png",
+    "src": "vehicle.svg",
     "color": "#fff"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "org.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "doc_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "doc_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "org.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "vechicle_aqua.png",
+    "src": "vehicle.svg",
     "color": "#fff"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "doc_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "org.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "org_aqua.png"
+    "src": "doc.svg"
   },
   {
-    "src": "human_aqua.png",
+    "src": "human.svg",
     "color": "#fff"
   },
   {
-    "src": "vechicle_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "org.svg"
   },
   {
-    "src": "org_aqua.png"
+    "src": "doc.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "human.svg"
   },
   {
-    "src": "human_aqua.png"
+    "src": "org.svg"
   },
   {
-    "src": "doc_aqua.png"
+    "src": "vehicle.svg"
   },
   {
-    "src": "org_aqua.png",
+    "src": "doc.svg",
     "color": "#fff"
   }
 ]

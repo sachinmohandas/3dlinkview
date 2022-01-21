@@ -17,21 +17,24 @@
 <div ng-controller="threeDController">
     <div class="filter-cont" ng-if="filterCont">
         <ul>
-            <li ng-click="selectFilter(); getDocuments()">Documents</li>
-            <li ng-click="selectFilter(); getBinders()">Binders</li>
-            <li ng-click="selectFilter(); getAlerts()">Alerts</li>
+            <li ng-click="selectFilter(); getAll()">All</li>
+            <li ng-click="selectFilter(); getHuman()">Human</li>
+            <li ng-click="selectFilter(); getDocs()">Documents</li>
+            <li ng-click="selectFilter(); getOrg()">Organization</li>
+            <li ng-click="selectFilter(); getVehicle()">Vehicle</li>
+            <li ng-click="selectFilter(); getMoreData()">5000 + Data</li>
         </ul>
     </div>
     <div class="td-header">
-        <div class="left td-header-filter pointer" ng-click="selectFilter()">
+        <div class="left td-header-filter pointer" ng-click="selectFilter()" ng-class="{'active': filterActivated}">
             <img src="./assets/img/trianglearrow_right.png" alt="" class="left ml-3 mt-1 filter-arrow"/>
-            <p class="left text-white m-0 ml-2">Filter Connections</p>
-            <img src="./assets/img/filter.png" alt="" class="left ml-2"/>
+            <p class="left text-white m-0 ml-2">Filter - {{filterName}}</p>
+            <img src="./assets/img/filter.png" alt="" class="right mr-2"/>
         </div>
 
         <div class="left td-header-search">
             <img src="./assets/img/search.png" alt="" class="td-search"/>
-            <input type="text" placeholder="Search" dir="rtl"/>
+            <input type="number" placeholder="Search" dir="rtl" ng-model="searchValue" ng-enter="DoWork()"/>
         </div>
         <div class="right td-header-menu">
             <img src="./assets/img/menu_vertical.png" alt="" ng-click="sideMenuClick()" class="pointer"/>
@@ -73,7 +76,7 @@
     </div>
     <div class="td-side-menu" ng-if="viewSideMenu">
         <ul>
-            <li ng-repeat="link in links" ng-click="nodeClick(link.value)">{{link.text}}<img src="./assets/img/{{link.icon}}.png" class="side-menu-icon" alt=""/></li>
+            <li ng-repeat="link in links" ng-click="nodeClick(link, links)" ng-class="{'active': link.status == 'active', 'inactive': link.status == 'inactive'}">{{link.text}}<img src="./assets/img/{{link.icon}}.png" class="side-menu-icon" alt=""/></li>
         </ul>
     </div>
     <div class="td-link-area">

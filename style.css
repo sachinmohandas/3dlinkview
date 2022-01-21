@@ -1,3 +1,6 @@
+body{
+    background: #080f15;
+}
 .td-side-menu{
     position: absolute;
     background: #123346;
@@ -96,7 +99,7 @@
     padding: 10px 0px;
 }
 .td-header-filter{
-    width: 200px;
+    width: 220px;
     padding: 15px 0px;
 }
 .td-header-menu {
@@ -121,8 +124,7 @@
 }
 .filter-cont{
     position: absolute;
-    width: 200px;
-    height: 135px;
+    width: 220px;
     background: #123346;
     color: #fff;
     top:50px;
@@ -136,13 +138,25 @@
 .filter-cont ul li {
     text-align: right;
     padding: 10px;
+    cursor: pointer;
 }
 .loading-area {
-    color: #000;
+    color: #fff;
     position: absolute;
     text-align: center;
     top: 100px;
     width: 100%;
     font-size: 20px;
     font-weight: bold;
+}
+.td-side-menu ul li.active{
+    background: #080f15;
+}
+.td-side-menu ul li.inactive{
+    background: #123346;
+    opacity: 0.5;
+    color:#f8f8f8;
+}
+.td-header-filter.active{
+    background: red;
 }
